@@ -1,21 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import Button from './components/Button';
+import { Container, Logo, Subtitle, Title } from './styles';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Container>
+      <Title>Conto contigo Mengão !</Title>
+      <Subtitle>Acima de tudo Rubro Negro ❤️🖤</Subtitle>
+      <Logo source={require('./assets/mengo.png')}></Logo>
+
+      <Button title="Comprar nossos produtos" bgcolor='red' />
+      <Button title="Acompanhe as novidades" bgcolor='white' />
+
+    </Container>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

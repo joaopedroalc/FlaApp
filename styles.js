@@ -26,3 +26,9 @@ export const Logo = styled.Image`
   height: 300px;
   margin-bottom:20px;
 `;
+
+export const SubBackground = styled.ImageBackground`
+  width: 100%;
+  align-items: center;
+  margin: 16px 0;
+`;
